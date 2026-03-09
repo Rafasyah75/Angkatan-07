@@ -1,8 +1,15 @@
 FROM python:3.10-slim
+
 WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Langsung copy semua file sekaligus
 COPY . .
-# Port wajib Hugging Face
+
+# Install library
+RUN pip install --no-cache-dir flet supabase
+
+# Port wajib
 EXPOSE 7860
+
+# Jalankan aplikasi
 CMD ["flet", "run", "main.py", "--web", "--port", "7860"]
