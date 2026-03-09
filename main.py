@@ -5,12 +5,12 @@ import time
 
 # --- KONFIGURASI SUPABASE (WAJIB DIGANTI AGAR ONLINE) ---
 # Dapatkan di Project Settings > API pada dashboard Supabase
-SUPABASE_URL = "https://your-project-url.supabase.co"
-SUPABASE_KEY = "your-anon-key-here"
+SUPABASE_URL = "https://avsbllgczhxsfbaulihk.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2c2JsbGdjemh4c2ZiYXVsaWhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTQ5NDQsImV4cCI6MjA4ODU5MDk0NH0.e4CIApB5UMB2Sh9NnOThV2RK-zDcfOU0dhCPyS2djnA"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
-BUCKET_NAME = "galeri" # Nama bucket yang kamu buat di Supabase Storage
+BUCKET_NAME = "galeri" # Nama bucket yang kamu buat di Supabse Storage
 
-# --- DATABASE ADMIN ---
+# --- DATaABASE ADMIN ---
 ADMINS = {
     "Hilbraaaam": "Ketua Angkatan 24-26",
     "Hudzaifahh": "Wakil ketua Angkatan 24-26",
